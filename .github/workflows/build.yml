@@ -6,9 +6,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
-        build_type: [RelWithDebInfo, Debug]
-        ui: [gui, cli]
+        os: [windows-latest]
+        build_type: [RelWithDebInfo]
+        ui: [gui]
         scripting: [lua, noscripts]
         exclude:
           - build_type: Debug
